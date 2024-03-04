@@ -1,0 +1,35 @@
+<!-- write a Simple mail template to send activation code to the user with dynamic data const data = {user:{name: user.name}, activationCode: activationCode}; -->
+
+<!-- Write the code to give simple styling to the mail template. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Account Activation</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        color: #333;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>Hi <%= user.name %>,</p>
+    <p>
+      Thanks for signing up with us. Please enter the code below to activate
+      your account.
+    </p>
+    <p><%= activationCode %></p>
+    <p>Note: Code is valid for 1 minute only.</p>
+    <p>
+      If you have any questions, feel free to contact us at
+      <a href="mailto:shivgun03@gmail.com"> shivgun03@gmail.com </a>.
+    </p>
+    <p>If you didn't sign up with us, please ignore this email.</p>
+    <p>Warm Regards</p>
+    <p>Founder SkillBoost: Shivam Agarwal</p>
+  </body>
+</html>
